@@ -21,3 +21,159 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* general
+============================================================== */
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.link {
+    text-decoration: none;
+    color: #575599;
+
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.link:hover {
+    color: #617bf3;
+}
+
+/* contacts
+============================================================== */
+
+.breadcrumbs {
+    margin: 1rem 0;
+}
+
+.breadcrumbs__link {
+    font-size: 13px;
+    color: #00000080;
+}
+
+.breadcrumbs__item {
+    display: inline;
+}
+
+.breadcrumbs__item +
+.breadcrumbs__item::before {
+    content: "";
+
+    display: inline-block;
+    margin: 0 .5rem;
+    width: 5px;
+    height: 5px;
+
+    background-color: #00000080;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+.contacts__main {
+    padding-bottom: 2rem;
+
+    border-bottom: 1px solid #969696;
+}
+
+.contacts__title {
+    font-size: 30px;
+    font-weight: 400;
+
+    color: #000000bf;
+}
+
+.contacts__grid-row {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+.contacts__grid-item {
+    padding: 0 1rem;
+
+    flex: 1 1 50%;
+}
+
+.contacts__main-content {
+    margin-top: 2rem;
+
+    line-height: 1.5;
+    font-size: 17px;
+    color: #404040
+}
+
+.contacts__main-mail-caption,
+.contacts__main-tel-caption {
+    font-size: 14px;
+}
+
+.contacts__main-addresses {
+    margin-top: 2rem;
+}
+
+.contacts__metro {
+    position: relative;
+
+    margin-left: 1rem;
+}
+
+.contacts__metro::before {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -2.5px;
+
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+}
+
+.contacts__metro_blue::before { background-color: #4685fa; }
+
+.contacts__metro_red::before { background-color: #fa5246; }
+
+.contacts__metro_purple::before { background-color: #9a46fa; }
+
+.contacts__main-social {
+    padding: 1.5rem 2rem;
+    height: 100%;
+
+    color: #000;
+
+    background-color: #fff9eb;
+}
+
+.contacts__main-social-caption {
+    font-size: 20px;
+}
+
+.contacts__main-social-desc {
+    margin-top: 1rem;
+
+    font-size: 14px;
+}
+
+.contacts__main-social-links {
+    margin-top: 1.5rem;
+}
+
+.contacts__social-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.contacts__social-link +
+.contacts__social-link {
+    margin-left: 1rem;
+}
