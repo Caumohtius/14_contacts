@@ -41,6 +41,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #617bf3;
 }
 
+.placeholder {
+    display: flex;
+    width: auto;
+    height: 100%;
+    margin-left: -1rem;
+
+    font-size: 2em;
+    font-weight: 400;
+    color: #5e5e5e;
+
+    background-color: #fff9eb;
+
+    justify-content: center;
+    align-items: center;
+}
+
 /* contacts
 ============================================================== */
 
@@ -72,7 +88,11 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
-.contacts__main {
+/* contacts__main
+============================================================== */
+
+.contacts__main,
+.contacts__shop {
     padding-bottom: 2rem;
 
     border-bottom: 1px solid #969696;
@@ -170,10 +190,205 @@ h1, h2, h3, h4, h5, h6 {
     height: 44px;
 
     border-radius: 50%;
-    background-color: rgb(0, 0, 0);
+    background-color: #fde8b7;
+
+    transition: background .2s;
+}
+
+.contacts__social-link:hover {
+    background-color: #ffd87e;
 }
 
 .contacts__social-link +
 .contacts__social-link {
     margin-left: 1rem;
+}
+
+/* contacts__shop
+============================================================== */
+
+.contacts__shop {
+    margin-top: 2rem;
+}
+
+.contacts__shop-content {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #000;
+}
+
+.contacts__shop-title {
+    margin: 1rem 0;
+
+    font-size: 24px;
+}
+
+.contacts__shop-time-to {
+    color: #636363;
+}
+
+.contacts__shop-time-to::before {
+    content: "–";
+
+    padding: 0 .5rem;
+}
+
+.contacts__shop-info {
+    margin-top: 1rem;
+}
+
+.contacts__shop-contact {
+    flex-basis: 35%;
+}
+
+.contacts__shop-contact-caption,
+.contacts__shop-worktime-caption {
+    padding-bottom: .2rem;
+
+    font-size: 17px;
+}
+
+.contacts__shop-contact-label {
+    display: inline-block;
+
+    width: 3rem;
+}
+
+.contacts__shop-woktime-time {
+    display: inline-block;
+}
+
+.contacts__shop-desc {
+    margin: 1rem 0;
+
+    color: #636363;
+}
+
+.contacts__shop-previews {
+    margin: 3rem -.5rem 0;
+    padding-right: 2rem;
+}
+
+.contacts__shop-preview {
+    padding: 0 .5rem;
+
+    flex-basis: calc(100% / 6);
+}
+
+.contacts__shop-preview-link::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.contacts__shop-preview-link {
+    display: flex;
+
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+
+    background-color: #fde8b7;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacts__shop-preview-link:hover {
+    color: #000;
+    background-color: #fff9eb;
+}
+
+.contacts__shop-managers {
+    margin-top: 2rem;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.contacts__shop-managers-arrow-wrapper {
+    flex: 0 1 300px;
+}
+
+.contacts__shop-managers-arrow {
+    position: relative;
+
+    display: flex;
+    padding: 2rem;
+    height: 100px;
+
+    font-size: 17px;
+
+    background-color: #fffaef;
+
+    align-items: center;
+}
+
+.contacts__shop-managers-arrow::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 0 40px 50px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.contacts__shop-managers-arrow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 0 0 50px 40px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.contacts__shop-managers-cards {
+    margin: 0 -.5rem;
+
+    align-items: center;
+
+    flex: 1 1 auto;
+}
+
+.contacts__shop-manager-card {
+    padding: 0 .5rem;
+
+    flex: 0 1 calc(100% / 3);
+}
+
+.contacts__shop-manager-photo {
+    display: inline-block;
+
+    width: 90px;
+    height: 90px;
+
+    background-color: #fde8b7;
+    border-radius: 50%;
+
+    vertical-align: top;
+}
+
+.contacts__shop-manager-info {
+    display: inline-flex;
+    margin-left: 1rem;
+    height: 90px;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts__shop-manager-name {
+    font-size: 17px;
 }
